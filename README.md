@@ -10,12 +10,6 @@ This is a React-based "Catch the Mole" game where the player needs to click on m
 - **Score and Accuracy**: Displays score, number of clicks, and accuracy after each game.
 - **Records**: Save and display records of your best performances.
 
-## Game Flow
-1. Start the game by clicking the **Start Game** button.
-2. Moles will appear in random holes, and you need to click on them to score.
-3. Once you reach a target score (depending on the mode), the game will either finish or move to a harder level.
-4. View your performance (score, accuracy, and time) and try to set new records!
-
 ## How to Play
 
 1. Start the game by clicking the **Start Game** button.
@@ -46,5 +40,13 @@ This is a React-based "Catch the Mole" game where the player needs to click on m
    ```
 4. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
+
+## Testing
+
+1. Run test script in terminal:
+   ```bash
+   npm run test
+   ```
+
