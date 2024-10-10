@@ -59,7 +59,6 @@ export const setNewRecord = (record : Record) => {
     // check if new record is better
 
     if(newRecord.length > 0){
-        console.log('newRecord', newRecord);
         launchConfetti();
         return newRecord
     }else{

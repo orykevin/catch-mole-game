@@ -6,7 +6,6 @@ export const ScoreRecords = ({ onClose }: { onClose: () => void }) => {
   const records = localStorageRecord
     ? (JSON.parse(localStorageRecord) as Record[])
     : [];
-  console.log(records);
   return (
     <div className="score-records">
       <button

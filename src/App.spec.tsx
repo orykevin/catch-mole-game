@@ -28,7 +28,6 @@ describe("App Component", () => {
 
   it("starts the game when Start Game button is clicked", () => {
     const startButton = screen.getByText("Start Game");
-    console.log(startButton);
     fireEvent.click(startButton);
     expect(screen.getByText("Game is running")).toBeInTheDocument();
     expect(screen.getByText("Score: 0")).toBeInTheDocument();
@@ -54,7 +53,7 @@ describe("App Component", () => {
     fireEvent.click(startButton);
     const molePosition = screen.getByTestId("mole");
     fireEvent.click(molePosition);
-    expect(screen.getByText(`Score: ${EASY_SCORE}`)).toMatchSnapshot();
+    expect(screen.getByText(`Score: ${EASY_SCORE}`)).toBeInTheDocument();
     fireEvent.click(molePosition);
     expect(screen.getAllByTestId("hole")).toHaveLength(MEDIUM_LEVEL);
     expect(screen.getByText(`Score: ${MEDIUM_SCORE}`)).toBeInTheDocument();
